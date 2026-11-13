@@ -7,7 +7,10 @@ from sqlalchemy import engine_from_config, pool
 
 from app.database.connection import Base
 from app.models.employee import Employee
+from app.models.user import User
 
+#identify the tables defined by the sqlalchemy models
+target_metadata = Base.metadata
 
 # Load environment variables from .env
 load_dotenv()

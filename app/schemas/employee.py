@@ -36,3 +36,13 @@ class EmployeeResponse(BaseModel):
     phone_no: str
 
     model_config = ConfigDict(from_attributes=True)
+    
+class EmployeePageResponse(BaseModel):
+
+    total: int
+    page: int
+    limit: int
+    total_pages: int
+
+    items: list[EmployeeResponse]
+    

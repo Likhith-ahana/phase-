@@ -28,7 +28,6 @@ update, and delete employee records.
 - Partially update employee details
 - Delete employee records
 - Email validation
-- Input validation using Pydantic
 - Database integration using SQLAlchemy
 - Database schema management using Alembic
 - REST API documentation using Swagger UI
